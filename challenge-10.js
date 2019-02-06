@@ -13,7 +13,7 @@
 	var five = Number ('5');
 	console.log( five + ' é número?', typeof five === 'number' );
 
-	var concat = String (10 + 10);
+	var concat = String (10) + 10;
 	console.log( '"' + concat + '" é uma string? E é igual a "1010"?', typeof concat === 'string' );
 
 	/*
@@ -25,7 +25,13 @@
 	função receberá dois parâmetros e retornará a operação referente à sua
 	propriedade, usando os valores passados por parâmetro.
 	*/
-	// ?
+	var operation = {
+	  '+': function (x, y) { return x + y;},
+	  '-': function (x, y) { return x - y;},
+	  '*': function (x, y) { return x * y;},
+	  '/': function (x, y) { return x / y;},
+	  '%': function (x, y) { return x % y;}
+	};
 
 	/*
 	Crie uma função chamada `isOperatorValid`, que receberá um operador por
@@ -37,7 +43,10 @@
 	Caso contrário, "false".
 	- O desafio é fazer o retorno sem usar "if" ou "switch".
 	*/
-	// ?
+	function isOperatorValid (operador) {
+	  //return operation [operador] !== undefined;
+          return !!operation[operador];
+	};
 
 	/*
 	Agora vamos criar a calculadora.
