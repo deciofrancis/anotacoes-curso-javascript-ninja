@@ -162,3 +162,48 @@ var some = arr.some(function(item) {
 
 console.log(some);
 
+Aula 80
+
+Arrays 
+
+Métodos
+
+- map() = recebe uma função como parâmetro que recebe três argumentos. Realiza a operação da função em cada item do array e cria um nome array, não altera o array principal.
+
+Exemplo: 
+
+var arr = [1, 2, 3, 4, 5];
+
+var map = arr.map(function(item, index, array) {
+  return item + 1;
+});
+
+console.log(map);
+
+- filter() = filtra conforme a instrução que vai ser realizada pela função.
+
+Exemplo:
+
+var arr = [1, 2, 3, 4, 5];
+
+var filter = arr.filter(function(item, index, arrya) {
+  return item > 2;
+});
+
+console.log(filter);
+
+
+* É possível encadear métodos em JavaScript
+
+Exemplo:
+
+var arr = [1, 2, 3, 4, 5];
+
+var map = arr.map(function(item) {
+  return item + 10;
+}).filter(function(item) {
+  return item > 13;
+});
+
+console.log(map);
+
