@@ -113,3 +113,52 @@ arr.splice(1, 4, 2, 3, 4);
 arr
 [0, 2, 3, 4, 1, 2, 3, 4, 5, 6]
 
+Aula 79
+
+Arrays
+
+Métodos
+
+- forEach() = recebe três parâmetros (item, index, array), podendo usar apenas um parâmetro, um pouco mais rápido que o for.
+
+Exemplo: 
+
+var arr = [1, 2, 3, 4, 5, 6, 7];
+
+arr.forEach(function(item, index, array) {
+  console.log(item, index, array);
+});
+
+var arr = [1, 2, 3, 4, 5, 6, 7];
+var sum = 0;
+
+arr.forEach(function(item) {
+  sum += item;
+});
+
+console.log(sum);
+
+- every() = retorna sempre true ou false, baseado na função que é passado. Utilizado para fazer verificação.
+
+Exemplo:
+
+var arr = [1, 2, 3, 4, 5, 6, 7];
+
+var every = arr.every(function(item) {
+  return item < 5;
+});
+
+console.log(every);
+
+- some() = retorna true ou false, se pelo menos um dos itens for verdadeiro retorna true.
+
+Exemplo:
+
+var arr = [1, 2, 3, 4, 5, 6, 7];
+
+var some = arr.some(function(item) {
+  return item % 2 === 0;
+});
+
+console.log(some);
+
