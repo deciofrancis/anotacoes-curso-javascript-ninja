@@ -49,7 +49,7 @@ arr.unshift(0);
 
 arr
 [0, 1, 2, 3, 4]
--shifit() = remove  o primeiro item do array.
+-shift() = remove o primeiro item do array.
 
 Exemplo:
 
