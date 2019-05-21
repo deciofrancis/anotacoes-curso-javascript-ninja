@@ -192,7 +192,6 @@ var filter = arr.filter(function(item, index, arrya) {
 
 console.log(filter);
 
-
 * É possível encadear métodos em JavaScript
 
 Exemplo:
