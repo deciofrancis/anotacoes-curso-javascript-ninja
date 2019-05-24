@@ -8,38 +8,42 @@
 	usando o método visto na aula 13.
 	*/
 	console.log( 'O array em formato de string é:' );
-	// ?
+	console.log([1, 2, 3, 4, 5].toString());
 
 	/*
 	Crie 2 arrays `sul` e `sudeste`, que serão as regiões do Brasil.
 	Cada array deve conter os estados dessa região.
 	*/
-	// ?
+	var sul = ['Santa Catarina', 'Parana', 'Rio Grande do Sul'];
+	var sudeste = ['São Paulo', 'Rio de Janeiro', 'Minas Gerais', 'Espirito Santo'];
 
 	/*
 	Crie uma variável chamada `brasil`, que irá receber as duas regiões
 	concatenadas. Mostre o `brasil` no console.
 	*/
 	console.log( '\nAlguns Estados do Brasil:' );
-	// ?
+	var brasil = sul.concat(sudeste);
+	console.log(brasil);
 
 	/*
 	Adicione 3 novos estados da região Norte no início do array e mostre no console.
 	*/
 	console.log( '\nMais estados adicionados:' );
-	// ?
+	brasil.unshift('Amazonas', 'Acre', 'Pará');
+	console.log(brasil);
 
 	/*
 	Remova o primeiro estado do array `brasil` e mostre-o no console.
 	*/
 	console.log( '\nEstado removido:' );
-	// ?
+	console.log(brasil.shift());
 
 	/*
 	Crie um novo array chamado `newSul`, que receba somente os estados do sul,
 	pegando do array `brasil`. Não remova esses itens de `brasil`.
 	*/
-	// ?
+	var newSul = brasil.slice(2,5);
+	console.log(newSul);
 
 	/*
 	Mostre no console os estados que estão em `newSul`.
