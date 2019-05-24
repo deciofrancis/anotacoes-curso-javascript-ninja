@@ -120,7 +120,15 @@
 	- "Nem todos os estados tem mais de 7 letras!"
 	*/
 	console.log( '\nTodos os estados de `brasil` tem mais de 7 letras?' );
-	// ?
+	var every = brasil.every(function(item) {
+		return item,length > 7;
+	});
+	console.log(
+		every
+		? 'Sim, todos os estados tem mais de 7 letras!'
+		: 'Nem todos os estados tem mais de 7 letras!'
+	);
+	
 
 	/*
 	Percorra o array `brasil` e verifique se o Ceará está incluído, atribuindo o
@@ -131,7 +139,14 @@
 	- "Ceará não foi incluído :("
 	*/
 	console.log( '\nCeará está incluído em `brasil`?' );
-	// ?
+	var some = brasil.some(function(item) {
+		return item === 'Ceará';
+	});
+	console.log(
+		some
+		? 'Ceará está incluído!'
+		: 'Ceará não foi incluído :('
+	);
 
 	/*
 	Percorra o array `newBrasil` e crie um novo array que some 1 no ID de cada
@@ -139,24 +154,31 @@
 	- "[ESTADO] pertence ao Brasil."
 	Atribua o novo array a uma variável chamada `map`.
 	*/
-	// ?
+	var map = newBrasil.map(function(item, index) {
+		return {
+			id: item.id + 1,
+			estado: item.estado + ' pertence ao Brasil.'
+		};
+	});
 
 	/*
 	Mostre no console o array criado acima:
 	*/
 	console.log( '\nnewBrasil agora com mais informações:' );
-	// ?
+	console.log(map);
 
 	/*
 	Filtre o array criado acima, retornando somente os estados que tiverem
 	ID par. Atribua o valor à uma variável chamada `filter`.
 	*/
-	// ?
+	var filter = map.filter(function(item, index) {
+		return item.id % 2 === 0;
+	});
 
 	/*
 	Mostre o array filtrado acima no console.
 	*/
 
 	console.log( '\nEstados com ID par:' );
-	// ?
+	console.log(filter);
 })();
