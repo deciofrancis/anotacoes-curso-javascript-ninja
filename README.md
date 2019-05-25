@@ -206,3 +206,43 @@ var map = arr.map(function(item) {
 
 console.log(map);
 
+Aula 84
+
+Arrays
+
+reduce() - reduz um array em um unico item, não modifica o array principal
+
+Exemplo:
+
+var arr = [1, 2, 3, 4, 5];
+var reduce = arr.reduce(function(acumulado, atual, index, array) {
+  return acumulado + atual;
+} 0);
+
+/*
+1ª - 0 + 1 = 1
+2ª - 1 + 2 = 3
+3ª - 3 + 3 = 6
+4ª - 6 + 4 = 10
+5ª - 10 + 5 = 15
+*/
+
+*Não é obrigatorio passar o valo 0 do primeiro acumulado, mas em alguns casos será necessario.
+
+reduceRight() - reduz também em um unico item só que pegando os valores da direito para a esquerda.
+
+Aula 85
+
+Arrays
+
+indexOf() - procura se o valor passado existe no array, retornando o indice do item no array se encontrar. Caso não exista retorna -1. Pode se usar um segundo parâmetro que informa de onde que começa a busca no array.
+
+Exemplo:
+
+var arr = [1, 2, 3, 4];
+console.log(arr.indexOf(3));
+
+lastIndexOf() - também procura o valor passo se existe só que do final para o inicio. Retorna o indice normal do array.
+
+Array.isArray() - verifica se é o item é um array.
+
