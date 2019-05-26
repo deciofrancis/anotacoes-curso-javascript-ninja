@@ -186,7 +186,7 @@ Exemplo:
 
 var arr = [1, 2, 3, 4, 5];
 
-var filter = arr.filter(function(item, index, arrya) {
+var filter = arr.filter(function(item, index, array) {
   return item > 2;
 });
 
@@ -217,7 +217,7 @@ Exemplo:
 var arr = [1, 2, 3, 4, 5];
 var reduce = arr.reduce(function(acumulado, atual, index, array) {
   return acumulado + atual;
-} 0);
+}, 0);
 
 /*
 1ª - 0 + 1 = 1
