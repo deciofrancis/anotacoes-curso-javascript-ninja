@@ -246,3 +246,13 @@ lastIndexOf() - também procura o valor passo se existe só que do final para o 
 
 Array.isArray() - verifica se é o item é um array.
 
+Aula 90
+
+JS no browser
+
+IIFE - faz o codigos se tornarem local
+
+*Uma das funções do uso do IIFE nos codigos js é importante para não haver conflitos em variaves local e global.
+
+Escopo local - 
+
