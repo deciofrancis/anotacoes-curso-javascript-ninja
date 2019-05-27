@@ -85,7 +85,7 @@ arr
 <ol>
   <li> o índice de onde que começar. Passando só m parâmetro pega o array do índice passado até o fim do array.</li> 
   <li> o índice de onde que terminar.</li> 
-<ol>
+</ol>
 
 Exemplo:
 
@@ -286,7 +286,7 @@ console.log(arr.indexOf(3));
 
 <b>-lastIndexOf()</b> - também procura o valor passo se existe só que do final para o inicio. Retorna o indice normal do array.
 
-<b>-Array.isArray()</> - verifica se é o item é um array.
+<b>-Array.isArray()</b> - verifica se é o item é um array.
 
 <h3>Aula 90</h3>
 
