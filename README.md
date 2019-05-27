@@ -1,14 +1,14 @@
-# Respostas e anotações do Curso Javascript Ninja
+# Anotações do Curso Javascript Ninja
 
-Anotações
+Uso esse repositorio para colocar as anotações que faço durante o curso.
 
-Aula 77
+<h3>Aula 77</h3>
 
-Arrays
+<h5>Arrays</h5>
 
-Métodos
+<h4>Métodos</h4>
 
--toString() = em arrays, convere o array em uma string serparando por vígula.
+<b>-toString()</b> = em arrays, convere o array em uma string serparando por vígula.
 
 Exemplo: 
 
@@ -254,5 +254,9 @@ IIFE - faz o codigos se tornarem local
 
 *Uma das funções do uso do IIFE nos codigos js é importante para não haver conflitos em variaves local e global.
 
-Escopo local - 
+Em JS existe apenas escopo global e local. 
+
+Global - quando está fora das funções, acesséveis a todos.
+
+Local - quando dentro de uma função, apenas pode ser acessado pelo que estive dentro da função. 
 
