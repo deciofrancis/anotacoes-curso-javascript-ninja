@@ -16,9 +16,9 @@ Exemplo:
 var arr = [1, 2, 3, 4];
 
 arr.toString();
-```
 
 '1,2,3,4'
+```
 
 A diferença para .join(), é que o join pode se passar parâmetro. 
 
@@ -26,9 +26,9 @@ A diferença para .join(), é que o join pode se passar parâmetro.
 var arr = [1, 2, 3, 4];
 
 arr.join('-')
-```
 
 '1-2-3-4'
+```
 
 <b>-concat()</b> = faz a união com parâmetro passado, retornando um novo array. Não faz a união de arrays multidimensionais.
 
@@ -38,13 +38,16 @@ Exemplo:
 var arr = [1, 2, 3, 4];
 
 arr.concat(5)
-```
+
 [1, 2, 3, 4, 5]
+```
 
 O array original continua o mesmo.
 
+```
 arr
 [1, 2, 3, 4]
+```
 
 <b>-unshifit()</b> = adiciona um item no início do array.
 
@@ -54,10 +57,10 @@ Exemplo:
 var arr = [1, 2, 3, 4];
 
 arr.unshift(0);
-```
 
 arr
 [0, 1, 2, 3, 4]
+```
 
 <b>-shift()</b> = remove o primeiro item do array.
 
@@ -67,10 +70,10 @@ Exemplo:
 var arr = [0, 1, 2, 3, 4];
 
 arr.shift();
-```
 
 arr
 [1, 2, 3, 4]
+```
 
 <h3>Aula 78</h3>
 
@@ -80,22 +83,23 @@ arr
 
 <b>- slice()</b> = retorna uma pedaço do array. Possui dois parâmetros. Não modifica o array principal.
 <ol>
-  <li>1º -  o índice de onde que começar. Passando só m parâmetro pega o array do índice passado até o fim do array.</li> 
-  <li>2º - o índice de onde que terminar.</li> 
-</ol>
+  <li> o índice de onde que começar. Passando só m parâmetro pega o array do índice passado até o fim do array.</li> 
+  <li> o índice de onde que terminar.</li> 
+<ol>
+
 Exemplo:
+
 ```
 var arr = [1, 2, 3, 4];
 
 arr.slice(1);
-```
 
 [2, 3, 4]
 
-```
 arr.slice(1, 2);
-```
+
 [2, 3]
+```
 
 <b>- splice()</b> = retorna os valores removidos a partir de um índice passado por parâmetro, modificando o array principal que não tera mais os valores removidos. Passando dois parâmetros o primeiro é o índice de onde que começar a remoção e o segundo quantos itens serão removidos a partir do índice. A partir do terceiro parâmetro passando ele adiciona no array o que está sendo passando. 
 
@@ -105,18 +109,15 @@ Exemplo:
 var arr = [0, 1, 2, 3, 4];
 
 arr.splice(2)
-```
+
 [2, 3, 4]
 
-```
 arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 arr.splice(6, 3)
-```
 
 [6, 7, 8]
 
-```
 arr = [0, 1, 2, 3, 4, 5, 6];
 
 arr.splice(1, 0, ‘a’)
