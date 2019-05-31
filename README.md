@@ -363,3 +363,222 @@ Exemplo:
   //2
 })();
 ```
+<h3>Aula 94</h3>
+
+<h4>'use strict'; - Criação de variáveis sem o "var"</h4>
+
+O uso do 'use strict'; é para corrigir erros do ECMAScript anterior ao 5 como, poder acessar as variaves declaradas em função sem o "var" fora da função. É informado um erro quando isso acontece. 
+
+Pode ser usado tanto no escopo global quando no local.
+
+```
+(function() {
+  'use strict';
+  var myName = 'Décio Francis';
+  console.log(myName);
+})();
+console.log(myName);
+
+//Décio Francis
+//ReferenceError
+```
+
+<h3>Aula 95</h3>
+
+<h4>'use strict'; - uso do with e global this === undefined</h4>
+
+<b>- with</b> - não é permitido quando se usa 'use strict'; O uso do with é para extender a cadeia do escopo para uma declaração.
+
+```
+(function() {
+  'use strict';
+  var obj = {
+    prop1: {
+      prop2: {
+        prop3: {
+          prop31: 'prop31',
+          prop32: 'prop32',
+          prop33: 'prop33'
+        }
+      }
+    }
+  };
+  console.log(obj.prop1.prop2.prop3.prop31);
+  console.log(obj.prop1.prop2.prop3.prop32);
+  console.log(obj.prop1.prop2.prop3.prop33);
+
+  //usando o with
+  with(obj.prop1.prop2.prop3){
+    console.log(prop31, prop32, prop33);
+  }
+})();
+
+//prop31 
+//prop32 
+//prop33
+//prop31 prop32 prop33
+```
+- No escopo global, dentro de funções o this === undefined
+
+```
+(function() {
+  function Person(name, lastName, age) {
+    this.name = name;
+    this.lastName = lastName;
+    this.age = age;
+  }
+  console.log(Person('Décio', 'Silva', 30));
+})();
+console.log(name, lastName, age);
+
+//undefined
+// Décio Francis 30
+
+(function() {
+  'use strict';
+  function Person(name, lastName, age) {
+    this.name = name;
+    this.lastName = lastName;
+    this.age = age;
+  }
+  console.log(Person('Décio', 'Silva', 30));
+})();
+console.log(name, lastName, age);
+
+//TypeError
+
+(function() {
+  'use strict';
+  function Person(name, lastName, age) {
+    this.name = name;
+    this.lastName = lastName;
+    this.age = age;
+  }
+  console.log(this === undefined);
+})();
+
+//true
+```
+
+<h3>Aula 96</h3>
+
+<h4>'use strict'; - O operador delete, objetos e funções</h4>
+
+<b>- delete</b> - pode se usar para deletar propriedades de um objeto, mas não para deletar variáveis, objetos (fora do mode restrito, delete não faz nada e é avaliada como false, no mode restrito lança um SyntaxError se não puder deletar).  
+
+´´´
+(function() {
+  var myVar =  2;
+  var obj = {
+    prop1: 'prop1',
+    prop2: 'prop2',
+    prop3: 'prop3'
+  }
+  console.log(delete obj.prop1);
+})();
+
+//true
+
+(function() {
+  var myVar =  2;
+  var obj = {
+    prop1: 'prop1',
+    prop2: 'prop2',
+    prop3: 'prop3'
+  }
+  console.log(delete myVar);
+})();
+
+//false
+
+(function() {
+  'use strict';
+  var myVar =  2;
+  var obj = {
+    prop1: 'prop1',
+    prop2: 'prop2',
+    prop3: 'prop3'
+  }
+  console.log(delete myVar);
+})();
+
+//SyntaxError
+´´´
+
+<b>-Objetos</b> - Propriedades devem ter nomes diferentes
+
+<b>-Funções</b> - Argumentos devem ter nomes diferentes
+
+<h3>Aula 96</h3>
+
+<h4>Objeto String</h4>
+
+<b>.length</b> - conta quandos caracteres tem uma string.
+
+```
+'decio'.length
+//5
+```
+<b>.chartAt(index)</b> - diz qual é o caracter no indice que for passado.
+
+```
+'decio'.chartAt(0)
+//d
+```
+<b>.concat(str1, str2,...,strN)</b> - concatena quantas strings forem passadas por parametro. Não modifica a string principal
+
+```
+'decio'.concat(' francis', ' silva')
+//decio francis silva
+```
+
+<b>.indexOf(string [,start])</b> - verifica se existe o parametro passado e retorna a posição caso exista e -1 se não existir.
+
+```
+'decio'.indexOf(d)
+//0
+```
+
+<b>.lastIndexOf(string [,start])</b> - funciona como o indexOf só que de tras pra frente.
+
+<b>.replace(string, newString)</b> - subistitui uma string por uma nova string. Não modifica a string principal. É feito uma vez só.
+
+```
+'decio'.replace(d, z)
+//zecio
+```
+<b>.slice(start [,end])</b> - pega todos os caracteres a partir do indice passado. Criando uma nova string.
+
+```
+'decio'.slice(3)
+//io
+'decio'.slice(1, 4)
+//eci
+```
+
+<b>.split([separador] [,limit])</b> - quebra a string e transforma em um array.
+
+```
+'decio'.split(c)
+//['de', 'io']
+```
+
+<b>.substring(start [, end])</b> - pega todos os caracteres a partir do indice passado, mas diferente do slice ele quando o numero passado é maior que a strint ele retorna pegando do final para o inicio os caracteres.
+
+```
+'decio'.substring(2, 4)
+//ci
+'decio'.substring(6, 2)
+//cio
+```
+
+<b>.toLowerCase()</b> - coloca as strings em minúsculo.
+
+<b>.toUpperCase()</b> - coloca as strings em maiúsculo.
+
+```
+'DeCio'.toLowerCase()
+//decio
+'deCiO'.toUpperCase()
+//DECIO
+```
