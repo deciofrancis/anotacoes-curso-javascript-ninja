@@ -476,7 +476,6 @@ console.log(name, lastName, age);
   }
   console.log(delete obj.prop1);
 })();
-```
 
 //true
 
@@ -504,7 +503,7 @@ console.log(name, lastName, age);
 })();
 
 //SyntaxError
-´´´
+```
 
 <b>-Objetos</b> - Propriedades devem ter nomes diferentes
 
