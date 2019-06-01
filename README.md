@@ -466,7 +466,7 @@ console.log(name, lastName, age);
 
 <b>- delete</b> - pode se usar para deletar propriedades de um objeto, mas não para deletar variáveis, objetos (fora do mode restrito, delete não faz nada e é avaliada como false, no mode restrito lança um SyntaxError se não puder deletar).
 
-´´´
+```
 (function() {
   var myVar =  2;
   var obj = {
@@ -476,7 +476,7 @@ console.log(name, lastName, age);
   }
   console.log(delete obj.prop1);
 })();
-´´´
+```
 
 //true
 
