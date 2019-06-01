@@ -464,7 +464,7 @@ console.log(name, lastName, age);
 
 <h4>'use strict'; - O operador delete, objetos e funções</h4>
 
-<b>- delete</b> - pode se usar para deletar propriedades de um objeto, mas não para deletar variáveis, objetos (fora do mode restrito, delete não faz nada e é avaliada como false, no mode restrito lança um SyntaxError se não puder deletar).  
+<b>- delete</b> - pode se usar para deletar propriedades de um objeto, mas não para deletar variáveis, objetos (fora do mode restrito, delete não faz nada e é avaliada como false, no mode restrito lança um SyntaxError se não puder deletar).
 
 ´´´
 (function() {
@@ -476,6 +476,7 @@ console.log(name, lastName, age);
   }
   console.log(delete obj.prop1);
 })();
+´´´
 
 //true
 
