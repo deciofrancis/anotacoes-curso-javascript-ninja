@@ -582,3 +582,108 @@ console.log(name, lastName, age);
 'deCiO'.toUpperCase()
 //DECIO
 ```
+<h3>Aula 102</h3>
+
+<h4>Regex</h4>
+
+São tipos primitivos em javascrip, são bastante usado em manipulação de strings. É case sensitive.
+
+Site para testes - https://regex101.com/
+
+<b>-Objeto RegExp()</b> - cria um objeto de expressão regular para corresponder texto com um padrão.
+
+<b>-match()</b> - Esse método recupera as correspondências ao testar uma string com uma expressão regular.
+
+```
+/padrão/flags
+new RegExp(padrão[, flags])
+
+var texto = 'A Wikipédia é um projeto de enciclopédia colaborativa, universal e multilíngue estabelecido na internet sob o princípio wiki. ';
+
+texto.match(/o/);
+//['o']
+texto.match(/o/g);
+//[ 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o' ]
+```
+
+<h3>Aula 103</h3>
+
+<h4>Regex</h4>
+
+Podem usar literais, letras e  números basicamente. 
+
+<b>-flags</b> 
+g: global
+i: ignore case 
+
+<b>- Termos</b>
+\w: caracteres alfanuméricos e _
+\d: números (digits)
+
+```
+var texto = 'A Wikipédia é um projeto de enciclopédia colaborativa, universal e multilíngue estabelecido na internet sob o princípio wiki. 1234';
+
+texto.match(/\w/g);
+//Array[101] - traz todos os caracteres separados em um array.
+
+texto.match(/\d/);
+//['1']
+texto.match(/\d\d/);
+//['12']
+```
+
+Se o regex passando não for encontrado retorna null.
+
+<b>-Classes de caracteres (listas)</b> - pega um conjunto específico de caracteres.
+
+```
+var texto = 'A Wikipédia 2 é um projeto de 1 enciclopédia colaborativa, universal e multilíngue 3 estabelecido na 4 internet sob o princípio wiki.';
+
+texto.match(/[123]/g);
+//['2', '1', '3']
+```
+
+<b>Agrupamento de caracteres()</b>
+
+```
+var texto = 'A Wikipédia 2 é um projeto 1867 de 1 enciclopédia colaborativa, universal e multilíngue 3 estabelecido na 4 internet sob 1845 o princípio wiki.';
+
+texto.match(/1867|1845/g);
+//['1867', '1845']
+```
+
+```
+var texto = 'A Wikipédia 2 é um projeto 1867 de 1 enciclopédia colaborativa, universal e multilíngue 3 estabelecido na 4 internet sob 1845 o princípio wiki.';
+
+texto.match(/[a-z]/g);
+//Array[99]
+```
+
+<h3>Aula 104</h3>
+
+<h4>Regex</h4>
+
+Tabela unicode - fica atento aos caracteres que estão nos intervalos.
+
+Pode se usar regex no .replace()
+
+```
+var texto = 'A Wikipédia 2 é um projeto 1867 de 1 enciclopédia colaborativa, universal e multilíngue 3 estabelecido na 4 internet sob 1845 o princípio wiki.';
+
+texto.replace(/ti/g, 'TI');
+//'A Wikipédia 2 é um projeto 1867 de 1 enciclopédia colaboraTIva, universal e mulTIlíngue 3 estabelecido na 4 internet sob 1845 o princípio wiki.'
+
+texto.replace(/(t)(i)/g, '$1');
+//'A Wikipédia 2 é um projeto 1867 de 1 enciclopédia colaboratva, universal e multlíngue 3 estabelecido na 4 internet sob 1845 o princípio wiki.'
+//$1 - substitui pela primeira captura.
+
+texto.replace(/(t)(i)/g, '$2');
+//'A Wikipédia 2 é um projeto 1867 de 1 enciclopédia colaboraiva, universal e mulilíngue 3 estabelecido na 4 internet sob 1845 o princípio wiki.'
+//$2 - substitui pela segunda captura.
+//$& - pega todas as capturas.
+
+texto.replace(/(t)(i)/g, function(capturaTotal, t, i){
+  return (t+i).toUpperCase();
+})
+//'A Wikipédia 2 é um projeto 1867 de 1 enciclopédia colaboraTIva, universal e mulTIlíngue 3 estabelecido na 4 internet sob 1845 o princípio wiki.'
+```
