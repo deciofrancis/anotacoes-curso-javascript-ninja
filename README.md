@@ -1,6 +1,6 @@
 # Anotações do Curso Javascript Ninja
 
-Uso esse repositorio para colocar as anotações que faço durante o curso.
+Uso esse repositório  para colocar as anotações que faço durante o curso.
 
 <h3>Aula 77</h3>
 
@@ -8,7 +8,7 @@ Uso esse repositorio para colocar as anotações que faço durante o curso.
 
 <h4>Métodos</h4>
 
-<b>-toString()</b> = em arrays, convere o array em uma string serparando por vígula.
+<b>-toString()</b> = em arrays, converte o array em uma string separando por vírgula.
 
 Exemplo: 
 
@@ -246,7 +246,7 @@ console.log(map);
 
 <h4>Métodos</h4>
 
-<b>-reduce()</b> - reduz um array em um unico item, não modifica o array principal
+<b>-reduce()</b> - reduz um array em um único item, não modifica o array principal
 
 Exemplo:
 
@@ -265,9 +265,9 @@ var reduce = arr.reduce(function(acumulado, atual, index, array) {
 */
 ```
 
-<b><i>*Não é obrigatorio passar o valo 0 do primeiro acumulado, mas em alguns casos será necessario.</i></b>
+<b><i>*Não é obrigatório passar o valo 0 do primeiro acumulado, mas em alguns casos será necessario.</i></b>
 
-<b>-reduceRight()</b> - reduz também em um unico item só que pegando os valores da direito para a esquerda.
+<b>-reduceRight()</b> - reduz também em um único item só que pegando os valores da direito para a esquerda.
 
 <h3>Aula 85</h3>
 
@@ -275,7 +275,7 @@ var reduce = arr.reduce(function(acumulado, atual, index, array) {
 
 <h4>Métodos</h4>
 
-<b>-indexOf()</b> - procura se o valor passado existe no array, retornando o indice do item no array se encontrar. Caso não exista retorna -1. Pode se usar um segundo parâmetro que informa de onde que começa a busca no array.
+<b>-indexOf()</b> - procura se o valor passado existe no array, retornando o índice do item no array se encontrar. Caso não exista retorna -1. Pode se usar um segundo parâmetro que informa de onde que começa a busca no array.
 
 Exemplo:
 
@@ -284,7 +284,7 @@ var arr = [1, 2, 3, 4];
 console.log(arr.indexOf(3));
 ```
 
-<b>-lastIndexOf()</b> - também procura o valor passo se existe só que do final para o inicio. Retorna o indice normal do array.
+<b>-lastIndexOf()</b> - também procura o valor passo se existe só que do final para o inicio. Retorna o índice normal do array.
 
 <b>-Array.isArray()</b> - verifica se é o item é um array.
 
@@ -292,13 +292,13 @@ console.log(arr.indexOf(3));
 
 <h4>JS no browser</h4>
 
-<b>-IIFE</b> - faz o codigos se tornarem local
+<b>-IIFE</b> - faz o códigos se tornarem local
 
-<b><i>*Uma das funções do uso do IIFE nos codigos js é importante para não haver conflitos em variaves local e global.</i></b>
+<b><i>*Uma das funções do uso do IIFE nos códigos js é importante para não haver conflitos em varíaves local e global.</i></b>
 
 Em JS existe apenas escopo global e local. 
 
-Global - quando está fora das funções, acesséveis a todos.
+Global - quando está fora das funções, acessíveis a todos.
 
 Local - quando dentro de uma função, apenas pode ser acessado pelo que estive dentro da função. 
 
@@ -306,7 +306,7 @@ Local - quando dentro de uma função, apenas pode ser acessado pelo que estive 
 
 <h4>O objeto this</h4>
 
-<b>-this</b> - O this dentro de métodos e obejtos é uma referência para o objeto principal. <i>No geral, this sempre levará o valor do contexto superior, ou seja, o valor daquele objeto que o invocou.</i>
+<b>-this</b> - O this dentro de métodos e objetos é uma referência para o objeto principal. <i>No geral, this sempre levará o valor do contexto superior, ou seja, o valor daquele objeto que o invocou.</i>
 
 ```
 let nome = 'João'
@@ -328,7 +328,7 @@ pedro.dizerFrase() // Pedro está correndo para pegar o trem!
 ```
 https://imasters.com.br/javascript/javascript-entendendo-o-de-uma-vez-por-todas
 
-<b>-Construtores</b> - por convenção nome de construtores sempre começam com letra maiuscula.
+<b>-Construtores</b> - por convenção nome de construtores sempre começam com letra maiúscula.
 
 Exemplo: no browser
 
@@ -367,7 +367,7 @@ Exemplo:
 
 <h4>'use strict'; - Criação de variáveis sem o "var"</h4>
 
-O uso do 'use strict'; é para corrigir erros do ECMAScript anterior ao 5 como, poder acessar as variaves declaradas em função sem o "var" fora da função. É informado um erro quando isso acontece. 
+O uso do 'use strict'; é para corrigir erros do ECMAScript anterior ao 5 como, poder acessar as varíaves declaradas em função sem o "var" fora da função. É informado um erro quando isso acontece. 
 
 Pode ser usado tanto no escopo global quando no local.
 
@@ -387,7 +387,7 @@ console.log(myName);
 
 <h4>'use strict'; - uso do with e global this === undefined</h4>
 
-<b>- with</b> - não é permitido quando se usa 'use strict'; O uso do with é para extender a cadeia do escopo para uma declaração.
+<b>- with</b> - não é permitido quando se usa 'use strict'; O uso do with é para estender a cadeia do escopo para uma declaração.
 
 ```
 (function() {
@@ -464,7 +464,7 @@ console.log(name, lastName, age);
 
 <h4>'use strict'; - O operador delete, objetos e funções</h4>
 
-<b>- delete</b> - pode se usar para deletar propriedades de um objeto, mas não para deletar variáveis, objetos (fora do mode restrito, delete não faz nada e é avaliada como false, no mode restrito lança um SyntaxError se não puder deletar).
+<b>- delete</b> - pode se usar para deletar propriedades de um objeto, mas não para deletar variáveis, objetos (fora do modo restrito, delete não faz nada e é avaliada como false, no modo restrito lança um SyntaxError se não puder deletar).
 
 ```
 (function() {
@@ -513,26 +513,26 @@ console.log(name, lastName, age);
 
 <h4>Objeto String</h4>
 
-<b>.length</b> - conta quandos caracteres tem uma string.
+<b>.length</b> - conta quantos caracteres tem uma string.
 
 ```
 'decio'.length
 //5
 ```
-<b>.chartAt(index)</b> - diz qual é o caracter no indice que for passado.
+<b>.chartAt(index)</b> - diz qual é o carácter no índice que for passado.
 
 ```
 'decio'.chartAt(0)
 //d
 ```
-<b>.concat(str1, str2,...,strN)</b> - concatena quantas strings forem passadas por parametro. Não modifica a string principal
+<b>.concat(str1, str2,...,strN)</b> - concatena quantas strings forem passadas por parâmetro. Não modifica a string principal
 
 ```
 'decio'.concat(' francis', ' silva')
 //decio francis silva
 ```
 
-<b>.indexOf(string [,start])</b> - verifica se existe o parametro passado e retorna a posição caso exista e -1 se não existir.
+<b>.indexOf(string [,start])</b> - verifica se existe o parâmetro passado e retorna a posição caso exista e -1 se não existir.
 
 ```
 'decio'.indexOf(d)
@@ -541,13 +541,13 @@ console.log(name, lastName, age);
 
 <b>.lastIndexOf(string [,start])</b> - funciona como o indexOf só que de tras pra frente.
 
-<b>.replace(string, newString)</b> - subistitui uma string por uma nova string. Não modifica a string principal. É feito uma vez só.
+<b>.replace(string, newString)</b> - substitui uma string por uma nova string. Não modifica a string principal. É feito uma vez só.
 
 ```
 'decio'.replace(d, z)
 //zecio
 ```
-<b>.slice(start [,end])</b> - pega todos os caracteres a partir do indice passado. Criando uma nova string.
+<b>.slice(start [,end])</b> - pega todos os caracteres a partir do índice passado. Criando uma nova string.
 
 ```
 'decio'.slice(3)
@@ -563,7 +563,7 @@ console.log(name, lastName, age);
 //['de', 'io']
 ```
 
-<b>.substring(start [, end])</b> - pega todos os caracteres a partir do indice passado, mas diferente do slice ele quando o numero passado é maior que a strint ele retorna pegando do final para o inicio os caracteres.
+<b>.substring(start [, end])</b> - pega todos os caracteres a partir do índice passado, mas diferente do slice ele quando o numero passado é maior que a strint ele retorna pegando do final para o inicio os caracteres.
 
 ```
 'decio'.substring(2, 4)
