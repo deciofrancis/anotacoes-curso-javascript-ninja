@@ -687,3 +687,43 @@ texto.replace(/(t)(i)/g, function(capturaTotal, t, i){
 })
 //'A Wikipédia 2 é um projeto 1867 de 1 enciclopédia colaboraTIva, universal e mulTIlíngue 3 estabelecido na 4 internet sob 1845 o princípio wiki.'
 ```
+
+<h3>Aula 108</h3>
+
+<h4>Regex</h4>
+
+<b>-[]</b> - Lista - corresponde a um dos que estiverem dentro
+<b>-()</b> - Grupo - Captura
+<b>-\w</b> - Caracteres alfanuméricos [A-Za-z0-9_]
+<b>-\d</b> - Dígitos [0-9]
+<b>-\s</b> - Espaço em branco
+<b>-\n</b> - Quebra de linha
+<b>-\t</b> - Tabulação
+<b>-.</b>  - Qualquer caracter menos o quebra de linha
+
+<h3>Aula 109</h3>
+
+<h4>Regex</h4>
+
+<b>Negação</b>
+
+<b>-[^abc]</b> - O match deve ser feito com qualquer item, menos com as da lista - a, b ou c, por exemplo
+<b>\W</b> - Qualquer caractere, menos os alfanuméricos
+<b>\D</b> - Qualquer caractere, menos os digítos
+<b>\S</b> - Qualquer caractere, menos os espaçoes em branco
+
+<b>Repetidores</b>
+
+<b>-{n,m}</b> - intervalo - item anterios ao menos n vezes, e no máximo m vezes
+
+<h3>Aula 110</h3>
+
+<h4>Regex</h4>
+
+<b>Repetidores</b>
+
+<b>-{n,}</b> - intervalo aberto - item anterior n ou masi vezes
+<b>-{n}</b> - item anterior exatamente n vezes.
+<b>-?</b> - opcional - zero ou uma ocorrência do item anterior
+<b>-+</b> - uma ou mais ocorrência do item anterior
+<b>-*</b> - zero ou mais ocorrência do item anterior
