@@ -727,3 +727,47 @@ texto.replace(/(t)(i)/g, function(capturaTotal, t, i){
 <b>-?</b> - opcional - zero ou uma ocorrência do item anterior
 <b>-+</b> - uma ou mais ocorrência do item anterior
 <b>-*</b> - zero ou mais ocorrência do item anterior
+
+<h3>Aula 114</h3>
+
+<h4>Regex</h4>
+
+<b>-^</b> - início de string
+<b>-$</b> - fim de string
+<b>-flag m</b> - multiline
+<b>-?</b> - repetição não gulosa (se usado após repetidores)
+<b>-(?:)</b> - somente agrupamento, sem captura
+<b>-\1, \2</b> - refereência dentro da regex
+
+<h3>Aula 115</h3>
+
+<h4>Regex</h4>
+
+Métodos de string onde você pode usar regex
+
+<b>-.match(regexp)</b> - retorna um array com os match ou null caso não faça match
+<b>-.replace(regexp, string)</b> 
+<b>-.split(regexp)</b> - quebra de acordo a regra passada, transforma string para array
+<b>-.search(regexp)</b> - busca o indice do caracter passado, caso não encontre retorna -1
+
+<h3>Aula 116</h3>
+
+<h4>Regex</h4>
+
+<b>-Construtor RegExp()</b> - cria um objeto de expressão regular para corresponder texto com um padrão.
+
+```
+/ab+c/i;
+new RegExp('ab+c', 'i');
+
+var re = /\w+/;
+var re = new RegExp('\\w+');
+```
+
+<h5>Métodos de RegExp</h5>
+
+<b>-.test(string)</b> - verifica se existe o parâmetro passado
+<b>-.exec(string)</b> - executa a busca por um padrão em uma determinada string. Retorna um array, ou null.
+
+É possível utilizar Caracteres especiais de RegExp em String
+Escapar aspas em string com \
