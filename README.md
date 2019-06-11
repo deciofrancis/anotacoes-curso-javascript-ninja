@@ -771,3 +771,121 @@ var re = new RegExp('\\w+');
 
 É possível utilizar Caracteres especiais de RegExp em String
 Escapar aspas em string com \
+
+<h3>Aula 120</h3>
+
+<h4>Js no browser</h4>
+
+IIFE e passagem de paramentros local e global.
+
+```
+var name = 'daciuk';
+function myFunction() {
+  var name = 'arroz';
+  console.log( name ); // 'arroz'
+}
+console.log( name ); // 'daciuk'
+
+(function(win) {
+  if( win === window )
+    console.log( 'win é uma referência local à window' );
+})(window);
+```
+
+<b>if / while / for</b> - com 1 linha não precisam das chaves
+
+```
+(function(win) {
+  if( win !== window )
+    console.log( 'win é uma referência local à window' );
+    console.log( 'Essa mensagem sempre é mostrada' );
+})(window);
+```
+É possível usar o objeto window com ou sem o window na frente
+
+```
+(function(win) {
+    'use strict';
+    window.alert('Mensagem!');
+    alert('Mensagem2!');
+})(window);
+```
+
+<b>objeto window.alert</b>
+
+```
+(function(win) {
+    'use strict';
+    window.alert('Mensagem!');
+})(window);
+```
+<b>objeto window.prompt</b> - faz um pergunta e espera uma resposta
+
+```
+(function(win) {
+    'use strict';
+    window.prompt('Mensagem?');
+})(window);
+```
+
+<h3>Aula 121</h3>
+
+<h4>Js no browser</h4>
+
+<b>objeto window.confirm</b>
+
+```
+(function(win) {
+    'use strict';
+    
+    var del = window.confirm('Deseja realmente excluir?');
+    if(del)
+      console.log('Excluído com sucesso!', del);
+    else
+      console.log('Ação cancelada!');
+})(window);
+```
+
+<b>objeto window.document</b> DOM - Documente Objeto Model
+
+<img src=”https://www.w3schools.com/js/pic_htmltree.gif”>
+
+<b>document.getElementById(id)</b> - procura o elemente pelo id
+<b>document.getElementsByTagName(name)</b>	- procura o elemento pela tag name
+<b>document.getElementsByClassName(name)</b> - procura o elemento pela class name
+
+<h3>Aula 122</h3>
+
+<h4>Js no browser</h4>
+
+<b>document.getElementsByName(name)</b> - procura o elemento pelo nome
+
+Quando for pegar elemento do DOM com variáveis utilizar $ no começo do nome da variável.
+
+```
+(function(win, doc) {
+    'use strict';
+    
+    var $inputs = doc.getElementsByTagName('input');
+    console.log($inputs);
+})(window, document);
+```
+
+<b>document.querySelector('.example');</b> - pega apenas um item
+<b>document.querySelectorAll('.example');</b> - pega todos os itens
+
+São elementos estáticos
+
+<h3>Aula 123</h3>
+
+<h4>Js no browser</h4>
+
+<h5>Formulários</h5>
+
+<b>.value</b> - pegar valores de inputs
+
+<h5>Introdução à eventos</h5>
+
+<b>.addEventListener()</b>
+
+Evento 'click' <b>.addEventListener('click')</b>
