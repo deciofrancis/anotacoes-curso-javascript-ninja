@@ -848,7 +848,7 @@ console.log( name ); // 'daciuk'
 
 <b>objeto window.document</b> DOM - Documente Objeto Model
 
-<img src=”https://www.w3schools.com/js/pic_htmltree.gif”>
+<img src='https://www.w3schools.com/js/pic_htmltree.gif'>
 
 <b>document.getElementById(id)</b> - procura o elemente pelo id
 <b>document.getElementsByTagName(name)</b>	- procura o elemento pela tag name
@@ -889,3 +889,35 @@ São elementos estáticos
 <b>.addEventListener()</b>
 
 Evento 'click' <b>.addEventListener('click')</b>
+
+<h3>Aula 127</h3>
+
+<h4>Sync vs async</h4>
+
+<b>Event loop</b>
+
+<img src='https://i.stack.imgur.com/BTm1H.png'>
+
+<h3>Aula 128</h3>
+
+<h4>Sync vs async</h4>
+
+<b>setTimeout()</b>
+
+```
+window.setTimeout(function() {
+  alert('Hello World!');
+}, 1000);
+```
+
+<b>setInterval()</b> - executa até uma ordem de parar
+
+<h3>Aula 128</h3>
+
+<h4>setTimeout vs setInterval</h4>
+
+setTimeout só coloca na fila após o termino da execução do anterios. 
+Diferença de performace.
+
+<b>clearTimeout(id)</b>
+<b>clearInterval(id)</b>
