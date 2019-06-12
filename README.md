@@ -921,3 +921,58 @@ Diferença de performace.
 
 <b>clearTimeout(id)</b>
 <b>clearInterval(id)</b>
+
+<h3>Aula 132</h3>
+
+<h4>Propriedade e métodos de funções</h4>
+
+<b>.name</b>
+<b>.length</b> - possível a utilização para saber quantos parâmetros são passados para a função
+
+```
+function myFunction(a, b, c, d){
+
+}
+console.log(myFunction.length);
+```
+
+<b>.toString()</b> - retorna todo o corpo da função em formato de string
+
+<b>.call()</b>
+<b>.call(this)</b>
+
+<h3>Aula 133</h3>
+
+<h4>Propriedade e métodos de funções</h4>
+
+<b>.call(this, arg1, arg2, ..., argN)</b>
+<b>.apply()</b>
+<b>.apply(this, [arg1, arg2, ..., argN])</b>
+
+<h3>Aula 134</h3>
+
+<h4>Prototype</h4>
+
+Praticamente todos os objetos em JavaScript descendem de Object; todos os métodos e propriedades herdados de Object.prototype, embora possam ser sobrescritos (exceto um Objeto com protótipo nulo, i.e. Object.create(null)). Por exemplo, outros protótipos construtores sobrescrevem a propriedade construtora e fornece seus próprios toString() métodos.
+
+Modificações no Objeto protótipo do objeto são propagadas a todos objetos através do encadeamento de protótipos, a menos que as propriedades e métodos  submetidos às mudanças sejam sobrescritos mais além no encadeamento dos protótipos. Este recurso oferece um mecânismo muito poderoso apesar de perigoso para sobrescrita e extensão de objetos.
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype
+
+<h3>Aula 135</h3>
+
+<h4>Array-like com Arrays</h4>
+
+<b>Array.prototype</b>
+<b>Array.prototype.forEach.call</b>
+
+```
+function myFunction() {
+  Array.prototype.forEach.call(arguments, function(item, index) {
+    console.log(item);
+  });
+}
+myFunction(1, 2, 3, 4, 5, 6, 7, 8);
+```
+
+<b>.editorconfig</b> - https://editorconfig.org/
