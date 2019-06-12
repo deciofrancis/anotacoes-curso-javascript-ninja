@@ -912,7 +912,7 @@ window.setTimeout(function() {
 
 <b>setInterval()</b> - executa até uma ordem de parar
 
-<h3>Aula 128</h3>
+<h3>Aula 129</h3>
 
 <h4>setTimeout vs setInterval</h4>
 
