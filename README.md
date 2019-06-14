@@ -977,8 +977,12 @@ myFunction(1, 2, 3, 4, 5, 6, 7, 8);
 
 <b>.editorconfig</b> - https://editorconfig.org/
 
-<h3>Aula 138, 139</h3>
+<h3>Aula 138, 139, 140, 141</h3>
 
 <h4>Debug</h4>
 
 Uso de breakpoint - não tem utilidade ser por na linha 1 do código porque executa a linha anterior ao breakpoint
+
+https://developer.chrome.com/devtools
+
+<b>console.timeEnd()</b> saber quanto tempo está demorando para ser executado o código
