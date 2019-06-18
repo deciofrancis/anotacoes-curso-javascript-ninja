@@ -8,7 +8,7 @@ Uso esse repositório  para colocar as anotações que faço durante o curso.
 
 <h4>Métodos</h4>
 
-<b>-toString()</b> = em arrays, converte o array em uma string separando por vírgula.
+<b>-toString()</b> - em arrays, converte o array em uma string separando por vírgula.
 
 Exemplo: 
 
@@ -30,7 +30,7 @@ arr.join('-')
 //'1-2-3-4'
 ```
 
-<b>-concat()</b> = faz a união com parâmetro passado, retornando um novo array. Não faz a união de arrays multidimensionais.
+<b>-concat()</b> - faz a união com parâmetro passado, retornando um novo array. Não faz a união de arrays multidimensionais.
 
 Exemplo:
 
@@ -49,7 +49,7 @@ arr
 //[1, 2, 3, 4]
 ```
 
-<b>-unshifit()</b> = adiciona um item no início do array.
+<b>-unshifit()</b> - adiciona um item no início do array.
 
 Exemplo:
 
@@ -62,7 +62,7 @@ arr
 //[0, 1, 2, 3, 4]
 ```
 
-<b>-shift()</b> = remove o primeiro item do array.
+<b>-shift()</b> - remove o primeiro item do array.
 
 Exemplo:
 
@@ -81,7 +81,7 @@ arr
 
 <h4>Métodos</h4> 
 
-<b>- slice()</b> = retorna uma pedaço do array. Possui dois parâmetros. Não modifica o array principal.
+<b>- slice()</b> - retorna uma pedaço do array. Possui dois parâmetros. Não modifica o array principal.
 <ol>
   <li> o índice de onde que começar. Passando só m parâmetro pega o array do índice passado até o fim do array.</li> 
   <li> o índice de onde que terminar.</li> 
@@ -101,7 +101,7 @@ arr.slice(1, 2);
 //[2, 3]
 ```
 
-<b>- splice()</b> = retorna os valores removidos a partir de um índice passado por parâmetro, modificando o array principal que não tera mais os valores removidos. Passando dois parâmetros o primeiro é o índice de onde que começar a remoção e o segundo quantos itens serão removidos a partir do índice. A partir do terceiro parâmetro passando ele adiciona no array o que está sendo passando. 
+<b>- splice()</b> - retorna os valores removidos a partir de um índice passado por parâmetro, modificando o array principal que não tera mais os valores removidos. Passando dois parâmetros o primeiro é o índice de onde que começar a remoção e o segundo quantos itens serão removidos a partir do índice. A partir do terceiro parâmetro passando ele adiciona no array o que está sendo passando. 
 
 Exemplo:
 
@@ -141,7 +141,7 @@ arr
 
 <h4>Métodos</h4>
 
-<b>- forEach()</b> = recebe três parâmetros (item, index, array), podendo usar apenas um parâmetro, um pouco mais rápido que o for.
+<b>- forEach()</b> - recebe três parâmetros (item, index, array), podendo usar apenas um parâmetro, um pouco mais rápido que o for.
 
 Exemplo: 
 
@@ -162,7 +162,7 @@ arr.forEach(function(item) {
 console.log(sum);
 ```
 
-<b>- every()</b> = retorna sempre true ou false, baseado na função que é passado. Utilizado para fazer verificação.
+<b>- every()</b> - retorna sempre true ou false, baseado na função que é passado. Utilizado para fazer verificação.
 
 Exemplo:
 
@@ -176,7 +176,7 @@ var every = arr.every(function(item) {
 console.log(every);
 ```
 
-<b>- some()</b> = retorna true ou false, se pelo menos um dos itens for verdadeiro retorna true.
+<b>- some()</b> - retorna true ou false, se pelo menos um dos itens for verdadeiro retorna true.
 
 Exemplo:
 
@@ -196,7 +196,7 @@ console.log(some);
 
 <h4>Métodos</h4>
 
-<b>- map()</b> = recebe uma função como parâmetro que recebe três argumentos. Realiza a operação da função em cada item do array e cria um nome array, não altera o array principal.
+<b>- map()</b> - recebe uma função como parâmetro que recebe três argumentos. Realiza a operação da função em cada item do array e cria um nome array, não altera o array principal.
 
 Exemplo: 
 
@@ -210,7 +210,7 @@ var map = arr.map(function(item, index, array) {
 console.log(map);
 ```
 
-<b>- filter()</b> = filtra conforme a instrução que vai ser realizada pela função.
+<b>- filter()</b> - filtra conforme a instrução que vai ser realizada pela função.
 
 Exemplo:
 
@@ -927,7 +927,7 @@ Diferença de performace.
 <h4>Propriedade e métodos de funções</h4>
 
 <b>.name</b>
-<b>.length</b> - possível a utilização para saber quantos parâmetros são passados para a função
+<b>.length</b> - é possível a utilização para saber quantos parâmetros são passados para a função
 
 ```
 function myFunction(a, b, c, d){
