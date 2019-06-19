@@ -505,9 +505,9 @@ console.log(name, lastName, age);
 //SyntaxError
 ```
 
-<b>-Objetos</b> - Propriedades devem ter nomes diferentes
+<b>-Objetos</b> - propriedades devem ter nomes diferentes
 
-<b>-Funções</b> - Argumentos devem ter nomes diferentes
+<b>-Funções</b> - argumentos devem ter nomes diferentes
 
 <h3>Aula 96</h3>
 
@@ -592,7 +592,7 @@ Site para testes - https://regex101.com/
 
 <b>-Objeto RegExp()</b> - cria um objeto de expressão regular para corresponder texto com um padrão.
 
-<b>-match()</b> - Esse método recupera as correspondências ao testar uma string com uma expressão regular.
+<b>-match()</b> - esse método recupera as correspondências ao testar uma string com uma expressão regular.
 
 ```
 /padrão/flags
