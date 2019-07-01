@@ -1001,3 +1001,15 @@ Exemplo:
 
 https://developer.mozilla.org/en-US/docs/Web/Events
 
+<h3>Aula 154</h3>
+
+<h4>DOM</h4>
+
+<img src='https://www.w3schools.com/js/pic_htmltree.gif'>
+
+<h4>Percorrer DOM</h4>
+
+https://tableless.com.br/entendendo-o-dom-document-object-model/
+
+Suporte de features nos browser - https://caniuse.com/
+
