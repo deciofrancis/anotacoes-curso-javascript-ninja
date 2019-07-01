@@ -986,3 +986,18 @@ Uso de breakpoint - não tem utilidade ser por na linha 1 do código porque exec
 https://developer.chrome.com/devtools
 
 <b>console.timeEnd()</b> saber quanto tempo está demorando para ser executado o código
+
+<h3>Aula 151</h3>
+
+<h4>Scripts e eventos inline</h4>
+
+*Não utilizar esses tipos de scripts e eventos inline não é boas praticas
+
+Exemplo:
+
+<a href="javascript:bom()">Boom!</a>
+
+<h4>Eventos</h4>
+
+https://developer.mozilla.org/en-US/docs/Web/Events
+
