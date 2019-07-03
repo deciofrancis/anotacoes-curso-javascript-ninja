@@ -1001,7 +1001,7 @@ Exemplo:
 
 https://developer.mozilla.org/en-US/docs/Web/Events
 
-<h3>Aula 154</h3>
+<h3>Aula 154 a 159</h3>
 
 <h4>DOM</h4>
 
@@ -1013,3 +1013,74 @@ https://tableless.com.br/entendendo-o-dom-document-object-model/
 
 Suporte de features nos browser - https://caniuse.com/
 
+<b>Propriedades</b>
+
+<b>.parentNode</b> - retorna o nó (node) parente de um Node referenciado na árvore DOM
+
+<b>.childNodes</b> - retorna uma coleção viva de nós filhos de um dado elemento
+
+<b>.firstChild</b> - etorna o node (nó) do primeiro elemento filho de uma árvore DOM ou null no caso do elemento não ter filhos 
+
+<b>.lastChild</b> - retorna o último elemento filho (node) de uma estrutura DOM. Se seu parentNode for um Element, ele retornará um Element node, um text node, ou um comment node. Retornará null se o elemento de referência não tiver elementos filhos child
+
+<b>.nextSibling</b> - retorna o nó seguinte ao especificado dentro do lista de filhos do seu pai(childNodes), ou null se o nó especificado for o último nó da lista
+
+<b>.previousSibling</b> - retorna o nó que precede o nó especificado na lista de childNodes do nó pai, retorna null se o nó especificado é o primeiro desta lista
+
+<b>.nodeType</b> - mostra o tipo de nó que nós temos
+
+<b>.nodeType</b> 
+  - Document = 9 
+  - Element = 1 
+  - Text = 3 
+  - Comments = 8 
+  - documentFragment = 22
+
+<b>.nodeValue</b> - Conteúdo textual de Text e Comment
+
+<b>.nodeName</b> -  mostra o nome do nó
+
+<b>.children</b> - Não padronizada - retorna uma coleção HTMLCollection dos elementos filhos do nó
+
+<b>.firstElementChild</b> - primeiro filho que é o elemento
+
+<b>.lastElementChild</b> - pega o último elemento
+
+<b>.nextElementSibling</b> - pega o proximo elemento
+
+<b>.previousElementSibling</b> - pega o elemento anterios
+
+<b>.childElementCount</b> - quantidades de filhos desse elemento o mesmo que children.length
+
+<b>Métodos</b>
+
+<b>.hasAttribute(name)</b> - verifica se tem esse atributo - tre ou false
+
+<b>.hasAttributes()</b> - verifica se o elemento tem qualquer atributo
+
+<b>.appendChild(child)</b> - adiciona um filho em um elemento
+
+<b>.insertBefore(node, beforeWhom)</b> - insere um filho antes, recebe dois parâmentros o primeiro é o nó e o segundo é antes de quem que ele vai ser inserido
+
+<b>.cloneNode(boolean)</b> - clona um nó existente
+
+<b>.hasChildNodes()</b> - verifica se o elemento tem algum nó filho
+
+<b>.removeChild(child)</b> - remove um elemento filho
+
+<b>.replaceChild(new, old)</b> -  substitui um filho, passando o novo filho e o antigo
+
+<b>.creatTextNode(text)</b> - cria um nó de texto
+  - document.createTextNode(text)
+  - document.createElement(tagName)
+
+<b>Atributos</b>
+
+<b>element.id</b> - retorna o id
+
+<b>element.className</b> - retorna className
+
+<b>.getAttribute(attr)</b> - retorna qualquer atributo
+  - sempre string
+
+<b>.setAttribute(attr, value)</b> - cria ou modifica um atributo
