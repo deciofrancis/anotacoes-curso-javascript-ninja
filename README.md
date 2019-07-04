@@ -1019,7 +1019,7 @@ Suporte de features nos browser - https://caniuse.com/
 
 <b>.childNodes</b> - retorna uma coleção viva de nós filhos de um dado elemento
 
-<b>.firstChild</b> - etorna o node (nó) do primeiro elemento filho de uma árvore DOM ou null no caso do elemento não ter filhos 
+<b>.firstChild</b> - retorna o node (nó) do primeiro elemento filho de uma árvore DOM ou null no caso do elemento não ter filhos 
 
 <b>.lastChild</b> - retorna o último elemento filho (node) de uma estrutura DOM. Se seu parentNode for um Element, ele retornará um Element node, um text node, ou um comment node. Retornará null se o elemento de referência não tiver elementos filhos child
 
@@ -1046,9 +1046,9 @@ Suporte de features nos browser - https://caniuse.com/
 
 <b>.lastElementChild</b> - pega o último elemento
 
-<b>.nextElementSibling</b> - pega o proximo elemento
+<b>.nextElementSibling</b> - pega o próximo elemento
 
-<b>.previousElementSibling</b> - pega o elemento anterios
+<b>.previousElementSibling</b> - pega o elemento anterior
 
 <b>.childElementCount</b> - quantidades de filhos desse elemento o mesmo que children.length
 
