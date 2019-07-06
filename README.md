@@ -1034,7 +1034,7 @@ Suporte de features nos browser - https://caniuse.com/
   - Element = 1 
   - Text = 3 
   - Comments = 8 
-  - documentFragment = 22
+  - documentFragment = 11
 
 <b>.nodeValue</b> - Conteúdo textual de Text e Comment
 
@@ -1084,3 +1084,74 @@ Suporte de features nos browser - https://caniuse.com/
   - sempre string
 
 <b>.setAttribute(attr, value)</b> - cria ou modifica um atributo
+
+<h3>Aula 162</h3>
+
+<h4>DOM - Manipular com performance</h4>
+
+<b>document.createDocumentFragment()</b> - sempre quando for manipular elementos dentro do DOM usar para manter performace
+  - parentNode == null
+
+<h3>Aula 163</h3>
+
+<h4>Eventos</h4>
+
+*Posição dos scripts no HTML importa
+
+<b>document = DOMContentLoaded</b> - espera todo o conteúdo do HTML seja carregado para disparar o elemento
+
+<b>window = load</b> -  desde que o carregamento não seja assíncrono, espera tudo que está dentro do window carregar primeiro e depois disparar o evento
+
+<h3>Aula 164</h3>
+
+<h4>Técnicas NINJA</h4>
+
+<b>Copiar arrays</b>
+
+<b>Array.prototype.slice</b>
+
+```
+(function() {
+  'use strict';
+
+  var arr = [1, 2, 3, 4, 5];
+  var arr2 = arr.slice();
+  var $divs = document.querySelectorAll('div');
+  var $divsCopy = Array.prototype.slice.call($divs);
+  console.log(arr, arr2, arr === arr2);
+  console.log($divs, $divsCopy, $divs === $divsCopy);
+;})();
+```
+
+<b>Como saber o tipo de dado real de um elemento</b>
+
+<b>Object.prototype.toString</b>
+
+```
+(function() {
+  'use strict';
+
+  function is(obj) {
+    return Object.prototype.toString.call(obj);
+  }
+
+  function isArray(obj) {
+    return is(obj) === '[object Array]';
+  }
+
+  function isObject(obj) {
+    return is(obj) === '[object Object]';
+  }
+
+  function isFunction(obj) {
+    return is(obj) === '[object Function]';
+  }
+
+  function isNumber(obj) {
+    return is(obj) === '[object Number]';
+  }
+
+  console.log(isArray([1, 2, 3]));
+  console.log(isNumber(1));
+;})();
+```
