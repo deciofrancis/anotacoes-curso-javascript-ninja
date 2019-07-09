@@ -1155,3 +1155,43 @@ Suporte de features nos browser - https://caniuse.com/
   console.log(isNumber(1));
 ;})();
 ```
+
+<h3>Aula 168</h3>
+
+<h4>AJAX</h4> - traz requisições sem precisar recarregar a tela
+
+<b>var ajax = new XMLHttpRequest();</b> - estância um novo objeto para fazer a requisição
+
+<b>ajax.open(<protocol>, <url>);</b> - abrir uma conexão informando o protocolo e a url que vai se utilizar
+
+<b>ajax.send(<data>)</b> - enviar os dados para o servidor caso tenha dados
+
+<h3>Aula 169</h3>
+
+<h4>AJAX</h4>
+
+<b>Evento onreadystatechange</b> - monitora o estado do evento se muda ou não 
+
+<b>ajax.readyState</b> - monitora o estado real da requisição
+  - Estados
+    - 0: Não enviada
+    - 1: Conexão aberta
+    - 2: Headers recebidos - cabeçalhos
+    - 3: CArregando corpo do request
+    - 4: Concluído
+
+<b>ajax.status</b> - HTTP STATUS (200, 403, 404, 500, ect)
+
+<h3>Aula 170</h3>
+
+<h4>AJAX - Manipulando a resposta</h4>
+
+<b>ajax.responseText</b> - resposta da requisição
+
+<b>ajax.responseXML</b> - converte a resposta em XML para documento
+
+<h3>Aula 171</h3>
+
+<h4>AJAX - Tratamento de erros</h4>
+
+<b>try / catch</b>
