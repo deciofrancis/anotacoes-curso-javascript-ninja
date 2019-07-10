@@ -1190,7 +1190,7 @@ Suporte de features nos browser - https://caniuse.com/
 
 <b>ajax.responseXML</b> - converte a resposta em XML para documento
 
-<h3>Aula 171</h3>
+<h3>Aula 172</h3>
 
 <h4>AJAX - Tratamento de erros</h4>
 
