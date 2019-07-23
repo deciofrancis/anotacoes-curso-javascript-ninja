@@ -1,4 +1,4 @@
-(function(win, doc){
+(function(DOM){
   'use strict';
   /*
   No HTML:
@@ -190,4 +190,4 @@
   function replaceCEP(message) {
     return message.replace('[CEP]', clearCEP());
   }
-})(window, document);
+})(window.DOM);
