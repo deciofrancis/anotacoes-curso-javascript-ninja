@@ -1195,3 +1195,7 @@ Suporte de features nos browser - https://caniuse.com/
 <h4>AJAX - Tratamento de erros</h4>
 
 <b>try / catch</b>
+
+<h4>Crianco um servidor HTTP com Python</h4>
+
+https://sempreupdate.com.br/crie-um-servidor-http-simples-em-poucos-minutos/
