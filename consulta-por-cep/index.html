@@ -1,28 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="ut-8">
-  <title>Consulta Endereço por CEP</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FR Carros</title>
 </head>
 <body>
-  <form data-js="form-cep">
-    <input type="text" data-js="input-cep">
-    <button type="submit">Consultar CEP</button>
+  <header>
+    <h1>
+      <span data-js="company-name"></span>
+      <span data-js="company-phone"></span>
+    </h1>
+  </header>
+
+  <form action="/" data-js="form-register">
+    <ul>
+      <li>
+        <label>Imgem do carro:</label>
+        <input type="url">
+      </li>
+      <li>
+        <label>Marca / Modelo:</label>
+        <input type="text">
+      </li>
+      <li>
+        <label>Ano:</label>
+        <input type="text">
+      </li>
+      <li>
+        <label>Placa:</label>
+        <input type="text">
+      </li>
+      <li>
+        <label>Cor:</label>
+        <input type="text">
+      </li>
+      <li>
+        <button type="submit">Cadastrar</button>
+      </li>
+    </ul>
   </form>
 
-  <div>
-    <h2 data-js="status"></h2>
-  </div>
+  <table>
+    <thead>
+      <tr>
+          <th>Imagem do carro</th>
+          <th>Marca / Modelo</th>
+          <th>Ano</th>
+          <th>Placa</th>
+          <th>Cor</th>
+      </tr>
+    </thead>
 
-  <div data-js="cep-info">
-    <p><strong>Logradouro:</strong><span data-js="logradouro">-</span></p>
-    <p><strong>Bairro:</strong><span data-js="bairro">-</span></p>
-    <p><strong>Estado:</strong><span data-js="estado">-</span></p>
-    <p><strong>Cidade:</strong><span data-js="cidade">-</span></p>
-    <p><strong>CEP:</strong><span data-js="cep">-</span></p>
-  </div>
+    <tbody></tbody>
+  </table>
 
   <script src="dom.js"></script>
-  <script src="challenge-28.js"></script>
+  <script src="challenge-29.js"></script>
 </body>
 </html>
