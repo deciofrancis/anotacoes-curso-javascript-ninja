@@ -1199,3 +1199,7 @@ Suporte de features nos browser - https://caniuse.com/
 <h4>Crianco um servidor HTTP com Python</h4>
 
 https://sempreupdate.com.br/crie-um-servidor-http-simples-em-poucos-minutos/
+
+<h3>Aula 183</h3>
+
+<b>instanceof</b> - testa se um objeto tem, em seu prototype, a função construtora
