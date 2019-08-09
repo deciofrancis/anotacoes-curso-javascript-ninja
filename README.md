@@ -1203,3 +1203,13 @@ https://sempreupdate.com.br/crie-um-servidor-http-simples-em-poucos-minutos/
 <h3>Aula 183</h3>
 
 <b>instanceof</b> - testa se um objeto tem, em seu prototype, a função construtora
+
+<h3>Aula 185</h3>
+
+<b>Closure</b> - https://github.com/ericdouglas/traduz-ai/blob/master/javascript/004-entenda-closures-no-javaScript-com-facilidade.md
+
+<h4>Manipulando CSS</h4>
+
+<b>element.style</b>
+
+<b>element.classList</b> -  add, remove, toggle, contains
