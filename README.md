@@ -1213,3 +1213,48 @@ https://sempreupdate.com.br/crie-um-servidor-http-simples-em-poucos-minutos/
 <b>element.style</b>
 
 <b>element.classList</b> -  add, remove, toggle, contains
+
+<h3>Aula 186</h3>
+
+<h4>DOM</h4>
+
+<b>innerHTML</b> - define ou obtém a sintaxe HTML descrevendo os elementos descendentes
+
+<h3>Aula 188</h3>
+
+<h4>DOM</h4>
+
+<b>insertAdjacentHTML(pos, text)</b> - escolhe uma posição onde o html vai ser inserido 
+  - beforebegin - afterbegin
+  - beforeend - afterend
+´´´
+<!-- beforebegin -->
+<p>
+<!-- afterbegin -->
+foo
+<!-- beforeend -->
+</p>
+<!-- afterend -->
+´´´
+
+<h3>Aula 189</h3>
+
+<b>devdocs.io</b> - documentação
+
+<h4>Date Object</h4>
+
+```
+var date = new Date();
+```
+
+<b>Date.now()</b>
+<b>date.getDate();</b> // 0-31
+<b>date.getDay();</b> // 0-6
+<b>date.getFullYear();</b> // 2019
+<b>date.getYear();</b> // 115
+<b>date.getHours();</b> // 0-23
+<b>date.getMilliseconds();</b> // 0-999
+<b>date.getMinutes();</b> // 0-59
+<b>date.getMonth();</b> // 0-11
+<b>date.getSeconds();</b> // 0-59
+<b>date.getTime();</b> // ms desde 1/1/1970 0:00:00 UTC
