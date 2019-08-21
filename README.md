@@ -1258,3 +1258,18 @@ var date = new Date();
 <b>date.getMonth();</b> // 0-11
 <b>date.getSeconds();</b> // 0-59
 <b>date.getTime();</b> // ms desde 1/1/1970 0:00:00 UTC
+
+<h3>Aula 191</h3>
+
+<h4>Math Object</h4>
+
+<b>Math.PI</b> - traz o número PI
+<b>Math.abs(x)</b> - valor absoluto de um número - valor positivo
+<b>Math.ceil(x)</b> - arredonda o valor sempre para cima
+<b>Math.floor(x)</b> - arredonda sempre para baixo
+<b>Math.round()</b> - respeira a regra de arredondamento
+<b>Math.sqrt(x)</b> - método que tira raiz quadrada
+<b>Math.cbrt(x)</b> - raiz cubica
+<b>Math.max([x1, x2, xN])</b> - parametros não são obrigatorios, maior valor passado por parâmetro
+<b>Math.min([x1, x2, xN])</b> - parametros não são obrigatorios, menor valor passado por parâmetro
+<b>Math.random()</b> - tras um número aleatório entre 0 e 1 
