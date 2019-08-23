@@ -1273,3 +1273,17 @@ var date = new Date();
 <b>Math.max([x1, x2, xN])</b> - parametros não são obrigatorios, maior valor passado por parâmetro
 <b>Math.min([x1, x2, xN])</b> - parametros não são obrigatorios, menor valor passado por parâmetro
 <b>Math.random()</b> - tras um número aleatório entre 0 e 1 
+
+<h3>Aula 193</h3>
+
+<h4>Ajax</h4>
+
+*nodemon - faz um auto-restar da aplicação toda vez que um arquivo do projeto for modificado
+
+<b>express</b> - cria abstrações de rotas, middlewares e muitas outras funções para facilitar a criação tanto de API's quanto SPA's.
+
+<h3>Aula 193</h3>
+
+<h4>Ajax</h4>
+
+<b>módulo cors</b> - permite que um site acesse recursos de outro site mesmo estando em domínios diferentes.
