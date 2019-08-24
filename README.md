@@ -1287,3 +1287,25 @@ var date = new Date();
 <h4>Ajax</h4>
 
 <b>módulo cors</b> - permite que um site acesse recursos de outro site mesmo estando em domínios diferentes.
+
+<h3>Aula 194</h3>
+
+<h4>Ajax</h4>
+
+<b>verbo POST</b>
+
+```
+ajax.open('POST', <url>)
+
+ajax.setRequestHeader(<key>, <value>)
+
+ajax.setRequestHeader(
+  'Content-Type',
+  'application/x-www-form-urlencoded'
+);
+
+ajax.send('key1=value1');
+ajax.send(
+  'key1=value1&key2=value2'
+);
+```
