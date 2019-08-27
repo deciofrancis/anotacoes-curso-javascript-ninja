@@ -1309,3 +1309,31 @@ ajax.send(
   'key1=value1&key2=value2'
 );
 ```
+
+<h3>Aula 199</h3>
+
+<h4>Testes</h4>
+
+<b>BDD</b> - Behavior Driven Development, ou Desenvolvimento Guiado por Comportamento.
+
+<h3>Aula 202</h3>
+
+<h4>Testes</h4>
+
+<b>TDD</b> - o processo funciona em ciclos pequenos e os requerimentos são escritos como casos de teste
+
+<img src='https://walde.co/wp-content/uploads/2016/11/Screen-Shot-2016-11-08-at-10.36.43-PM.png'>
+
+<b>chaijs</b>
+
+<h3>Aula 203</h3>
+
+<h4>Testes</h4>
+
+<b>mochajs</b>
+
+<b>Code coverage</b> - verificar o quanto de código esta coberto de teste
+
+<h3>Aula 205</h3>
+
+<b>Uglifyjs</b> 
