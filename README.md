@@ -1337,3 +1337,16 @@ ajax.send(
 <h3>Aula 205</h3>
 
 <b>Uglifyjs</b> 
+
+<h3>Aula 207</h3>
+
+<b>Sourcemaps</b>
+
+<h3>Aula 209</h3>
+
+<b>Padrões de código</b> 
+  - http://jscs.info/
+  - https://jshint.com/
+  - https://eslint.org/
+  - https://github.com/standard/standard
+  - https://github.com/standard/semistandard
